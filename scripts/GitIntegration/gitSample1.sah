@@ -5,5 +5,3 @@ _assertEqual("3000",$empid);
 
 _log("test8","success");
 
-
-_log("test8","success");
