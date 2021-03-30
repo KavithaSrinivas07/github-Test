@@ -7,3 +7,5 @@ _log("test8","success");
 
 
 _log("test8","success");
+
+_log();
