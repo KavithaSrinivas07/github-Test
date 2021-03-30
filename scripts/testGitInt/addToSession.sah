@@ -8,3 +8,4 @@ _assertNotNull(_lastDownloadedFileName());
 _saveDownloadedAs("temp/download/renamed.pdf"); 
 _clearLastDownloadedFileName(); 
 _assertNull(_lastDownloadedFileName()); 
+_assertNull(_lastDownloadedFileName()); 
