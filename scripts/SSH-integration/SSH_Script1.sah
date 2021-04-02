@@ -1,0 +1,8 @@
+if (_sahi.isAndroid() || _sahi.isIOS() || _sahi.isGeneric()) {
+			_takeScreenShot();
+		} else if (_sahi.isJava() || _sahi.isWindows() || _sahi.isApplet()) {
+			_focusWindow();
+			_takePageScreenShot();
+		} else if (_sahi.isSAP()) {
+			_takePageScreenShot();
+		}
