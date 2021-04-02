@@ -1,0 +1,6 @@
+function onScriptError($e) {
+	return onScriptErrorDefault($e);
+}
+function onScriptFailure($e) {
+	onScriptFailureDefault($e);
+}
