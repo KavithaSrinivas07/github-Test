@@ -1,0 +1,26 @@
+vsfadfsdWith all the inputs once tested and saved, we cannot change the diff repo unless we need to remove from .git.properties.(Suggestion: Refresh icon to clear the fields)
+Git commit UI has alignment issues. Dialog boxes are not even.(unstaged changes dialog box rhas empty space at right.)
+Arrow navigation is not working in git history
+Git history comment is broken after selecting the each comit and git message is not shown after selection at the bottom dialog box
+Git commit UI is broken when we open on right click - > commit on a file from navigator.
+Git commit msg dialog is not clearing the value once refreshed in FF
+On changing from one branch to another git repo name gets changed automatically on navigator. Same should be present in git commit UI instead of manual refresh.
+Git Configuration - Success: msg is not in green font and git commit msg dialog box has broken UI in IE.
+Git UI has showing loading msg on opening Git UI and as well as on Git history UI.
+Scroll bar is broken in Git History.
+Git integration gives sahi error once we give the wrong repository path. After that even if we give the correct path it still gives SAHI ERROR
+Git integration with SSH authentication accepts any passphrase input though passphrase is empty while generating SSH key.
+Comparing a file with HEAD Revision on a different repositoy, If file is not present in head revision still it shows as present.
+With all the inputs once tested and saved, we cannot change the diff repo unless we need to remove from .git.properties.(Suggestion: Refresh icon to clear the fields)
+Git commit UI has alignment issues. Dialog boxes are not even.(unstaged changes dialog box rhas empty space at right.)
+Arrow navigation is not working in git history
+Git history comment is broken after selecting the each comit and git message is not shown after selection at the bottom dialog box
+Git commit UI is broken when we open on right click - > commit on a file from navigator.
+Git commit msg dialog is not clearing the value once refreshed in FF
+On changing from one branch to another git repo name gets changed automatically on navigator. Same should be present in git commit UI instead of manual refresh.
+Git Configuration - Success: msg is not in green font and git commit msg dialog box has broken UI in IE.
+Git UI has showing loading msg on opening Git UI and as well as on Git history UI.
+Scroll bar is broken in Git History.
+Git integration gives sahi error once we give the wrong repository path. After that even if we give the correct path it still gives SAHI ERROR
+Git integration with SSH authentication accepts any passphrase input though passphrase is empty while generating SSH key.
+Comparing a file with HEAD Revision on a different repositoy, If file is not present in head revision still it shows as present.
