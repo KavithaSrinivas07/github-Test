@@ -1,1 +1,49 @@
-text file
+text fileFinal Suite Level Status  ->  Success, Failure, Aborted Timeout, User Aborted
+							  
+				
+Intermediate Status       ->  Healed, Failure, Error, NA
+							  
+							  
+Script Level Status       ->  Success, Failure, Error, Aborted, Aborted Timeout, Skipped, Not Supported, Retried, Internal Aborted
+
+
+Script Report Status      VS     Suite Level Status
+
+		SUCCESS       	 ->    SUCCESS
+		FAILURE       	 ->    FAILURE
+		ERROR         	 ->    FAILURE
+		ABORTED       	 ->    FAILURE
+		ABORTED TIMEOUT  ->    ABORTED TIMEOUT
+		ABORTED       	 ->    FAILURE
+		SKIPPED          ->    FAILURE
+		NOT SUPPORTED    ->    FAILURE
+		RETRIED          ->    FAILURE
+		INTERNAL ABORTED ->    FAILURE
+		USER ABORTED     ->    USER ABORTED
+		
+		
+		
+Intermediate Status validation checks
+
+	Script Level Step  Intermediate Status   Script Level Final Status
+
+   1. NA                     ->  NA                      ->  NA
+   2. FAILURE                ->  FAILURE                 ->  FAILURE
+   3. ERROR                  ->  ERROR                   ->  ERROR
+   4. HEALED                 ->  HEALED                  ->  SUCCESS
+   5. FAILURE, ERROR         ->  FAILED, ERROR           ->  ERROR
+   6. FAILURE, HEALED        ->  FAILURE, HEALED         ->  FAILURE
+   7. ERROR, HEALED          ->  ERROR                   ->  ERROR
+   8. ERROR, FAILURE         ->  ERROR                   ->  ERROR
+   9. HEALED, ERROR          ->  HEALED, ERROR           ->  ERROR
+  10. HEALED, FAILURE        ->  HEALED, FAILURE         ->  FAILURE
+  11. FAILURE, HEALED, ERROR ->  FAILURE, HEALED, ERROR  ->  ERROR
+  12. FAILURE, ERROR, HEALED ->  FAILURE, ERROR          ->  ERROR
+  13. ERROR, FAILURE, HEALED ->  ERROR                   ->  ERROR
+  14. ERROR, HEALED, FAILURE ->  ERROR                   ->  ERROR
+  15. HEALED, FAILURE, ERROR ->  HEALED, FAILURE, ERROR  ->  ERROR
+  16. HEALED, ERROR, FAILURE ->  HEALED, ERROR           ->  ERROR
+  17. USER ABORTED           ->  NA                      ->  USER ABORTED
+  18. ABORTED                ->  NA                      ->  FAILURE
+		
+		
